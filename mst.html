@@ -1,0 +1,176 @@
+
+
+ 
+
+
+
+
+<html>
+<head>
+<script type="text/javascript" src="/js/common.js.h-174117902.pack" charset="utf-8"></script>
+<script type="text/javascript" src="/jsps/login_jsps/login_js/login.js.h1185115049.pack" charset="utf-8"></script>  
+<title>OMAN REFRESHMENT CO</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css.h-684862146.pack" charset="utf-8"/>
+<style type="text/css">
+<!--
+.brd {  border: #000000; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<style type="text/css">
+
+	.logintext 
+	{
+		font-family:sans-serif;
+		font-size:13px;
+		color:#000000;
+    	border: 0px; 
+		background-color: #ffffff; 
+		filter: alpha(opacity=50):
+ 		moz-opacity: .50;
+    	opacity: .50;
+	} 
+	
+</style>
+<script>
+
+
+function onBodyLoad()
+{
+	var userpresnt = false;
+	var userremoved = false;
+	var userExistingMessage = "Login Credentials are being used by another user! \n Click OK to logout the existing user? \n OR \n Click Cancel to try afer some time?";
+	//alert(userpresnt);
+	if(userpresnt != false)
+	{
+		//var answer = confirm(userExistingMessage);
+		if(userpresnt)
+		{
+			///alert("logout the user");
+			document.loginForm.button.value = "logout";
+			document.loginForm.submit();
+		}
+	}
+	if(userremoved != false)
+	{
+		//alert("Hello");
+		document.loginForm.button.value = "login";
+        document.loginForm.submit();
+	}
+	if(''!=""){
+	alert('');
+	}
+}
+//.......this function opens a new window for the password recovery page...............
+function openPasswordRecovery()
+{
+	window.open("/jsps/passwordRecovery.jsp","","width=650,height=330");
+}
+</script>
+</head>
+
+<body  class="bodyclass" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="document.loginForm.userName.focus(); onBodyLoad();">
+<form name="loginForm" method="post" action="/loginAction.do">
+<table ID="primaryTab" width="1024" height="640" align="center"  cellpadding="0" cellspacing="0" border="0" style="BACKGROUND-POSITION: center top; BORDER-COLLAPSE: collapse; BACKGROUND-REPEAT: no-repeat; BACKGROUND-IMAGE: url(/jsps/login_jsps/common_images/DefaultPage1New.jpg)">
+				<tr valign="top" height="240"><td align="right" colspan="4"><table border="0"><tr><td width="7%"><img align="right" src="/jsps/images/lp_logo/lplogo_default.gif" height="70px" onclick=""></td></tr></table></td></tr>
+				<tr height="245">
+					<td valign="top" height="195" width="">
+					<table height="200" cellpadding="0" cellspacing="0" border="0">
+							<tr height="128"><td>&nbsp;</td></tr>
+							<tr height="122"><td>&nbsp;</td></tr>
+						</table>
+						
+					</td>
+					<td>&nbsp;</td>
+					<td align="left"><br/><br/><br/><br/><br/><br/>&nbsp;</td>
+					<td valign="top" height="195" width="366">
+							
+						
+					<table height="95"  cellpadding="0" cellspacing="0" border="0">
+							<tr height="40"><td colspan="4">&nbsp;&nbsp;&nbsp;</td></tr>
+							<tr height="60">
+								<td >&nbsp;</td>
+									</tr>
+									
+									
+						
+									
+							<tr height="60">
+				<td>
+					
+				 	&nbsp;
+				
+					
+				 </td>
+						<td width="100" align="right">&nbsp;</td>
+           <td width="120" style="BACKGROUND-POSITION: center center; BORDER-COLLAPSE: collapse; BACKGROUND-REPEAT: no-repeat; ">&nbsp;&nbsp;&nbsp;
+            &nbsp;
+            </td>
+							
+							</tr>	
+							<tr height="20">	
+							<td style="BACKGROUND-POSITION: center center; BORDER-COLLAPSE: collapse; BACKGROUND-REPEAT: no-repeat; ">&nbsp;&nbsp;&nbsp;
+            &nbsp;
+            </td>
+							</tr>
+							<tr>
+							<td>&nbsp;</td></tr><tr>
+							<td>&nbsp;</td></tr><tr height="2">
+							<td>&nbsp;</td></tr>
+							<tr height="43">
+						<td width="75" align="left">
+						
+						</td>
+								<td width="177" align="center"><br/>
+					
+					
+					
+					<input name="userName" type="text" id="TxtLogin" tabindex="1" value="" class="input_box_withoutborder" 
+					 style="width:141px;" onblur="" onfocus="select()" onkeydown="submitform(event)"/></td>
+								   <td rowspan="2" style="padding-top:5;" >
+								 <input type="button" title="Click Here To Login" style="width:40;height:43;background-color:transparent;border:0" onclick="buttonSubmit()"/></td>
+							</tr>
+							<tr height="38">
+							<td>&nbsp;</td>
+								<td width="177" align="center">
+						<input name="password" type="password" id="TxtPassword" tabindex="2" value="" class="input_box_withoutborder" 
+						 style="width:141px;" onblur="" onfocus="select()"  onkeydown="submitform(event)"/></td>
+							</tr>
+<tr height="60" valign="top">
+				<!-- <td>came here
+								
+				 </td>-->
+				 <td colspan="2">
+									
+						
+				 </td>
+				 
+						
+							
+							</tr>	
+							
+						
+							
+						
+						</table>
+					</td>
+					
+				</tr>
+				
+			
+
+				
+			</table>
+
+ 
+ <table width= "1000" border="0">
+ <tr height="1">
+
+ </tr>
+ </table>
+ <input type="hidden" name="systemPage" value="mst">
+  <input type="hidden" name="sysIdRefrence" value="266">
+ <input type="hidden" name="button" value="">
+</form>
+</body>
+</html>
+
